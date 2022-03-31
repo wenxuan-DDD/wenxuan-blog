@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+ 
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+ 
+/* 标题 */
+.header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/header.jpg");
+    height: 65vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+}
+ 
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #809eab;
+}
+ 
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+ 
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+    color: red;
+}
+ 
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+ 
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+ 
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 10%;
+    flex: 10%;
+    background-color: #e4f5fc;
+    padding: 20px;
+}
+ 
+/* main */
+.main {   
+    -ms-flex: 70%;
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+ 
+/* images */
+.myphoto {
+    background-color: #e4f5fc;
+    width: 100%;
+    padding: 20px;
+}
+
+.myphoto img {
+    width: 200px;
+    height:  250px;
+    object-fit: cover;
+}
+
+.mypets {
+    background-color: #e4f5fc;
+    width: 100%;
+    padding: 20px;
+}
+
+.mypets img {
+    width: 200px;
+    height:  200px;
+    object-fit: cover;
+}
+
+.photos {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+.photos img {
+    width: 1000px;
+    height:  600px;
+    object-fit: cover;
+}
+
+/* buttons */
+.buttons {
+    all:unset;
+    font-family:Helvetica,Arial,sans-serif;
+    display:inline-block;
+    max-width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    background-color:#0445AF;
+    color:#FFFFFF;
+    font-size:20px;
+    border-radius:25px;
+    padding:0 33px;
+    font-weight:bold;
+    height:50px;
+    cursor:pointer;
+    line-height:50px;
+    text-align:center;
+    margin:0 auto;
+    text-decoration:none;
+    width: 112px;
+    display: block;
+}
+ 
+/* footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #809eab;
+}
+ 
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+ 
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
